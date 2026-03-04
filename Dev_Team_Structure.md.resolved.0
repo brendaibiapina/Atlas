@@ -1,0 +1,77 @@
+# Estrutura do Time de Desenvolvimento (Squad Atlas)
+
+Para executar a fase de implementação e manter o produto vivo, a estrutura mínima viável (MVP Team) deve ser composta por **3 perfis-chave**.
+
+---
+
+## 1. Composição do Squad (MVP)
+
+| Papel | Foco Principal | Senioridade Ideal | Custo Estimado (PJ/Mes) |
+| :--- | :--- | :--- | :--- |
+| **Tech Lead / Fullstack** | Arquitetura, Backend, Integrações | Senior | R$ 12k - 18k |
+| **Product Designer / Dev** | UI/UX, Frontend Componentizado | Pleno | R$ 8k - 12k |
+| **Researcher Jurídico** | Curadoria de Normas, Validação de Dados | Pleno (Adv/Contador) | R$ 6k - 10k |
+
+> **Nota:** O papel de **Product Manager (PM)** pode ser absorvido pelo Fundador nesta fase inicial, focado em validar o Roadmap com os usuários.
+
+---
+
+## 2. Detalhamento dos Papéis
+
+### A. Tech Lead (O Construtor)
+*   **Responsabilidade:**
+    *   Setup da infraestrutura (Vercel, Supabase, Stripe).
+    *   Definição e manutenção do [schema.sql](file:///Users/brendaibiapina/.gemini/antigravity/brain/28eeaae0-40a1-4eed-a2ea-786c3f5bcbe0/database/schema.sql).
+    *   Implementação das regras de negócio complexas (disparos de e-mail, auth).
+    *   Code Review e Garantia de Qualidade.
+*   **Perfil:**
+    *   Experiência sólida em Next.js e TypeScript.
+    *   Conhecimento de Banco de Dados Relacional (Postgres).
+    *   "Pragmático" (Foca em entregar valor, não em over-engineering).
+
+### B. Product Designer & Frontend (O Artesão)
+*   **Responsabilidade:**
+    *   Traduzir os Wireframes em telas reais ([tsx](file:///Users/brendaibiapina/.gemini/antigravity/brain/28eeaae0-40a1-4eed-a2ea-786c3f5bcbe0/src/app/page.tsx)).
+    *   Manter a consistência visual (Design System do Atlas).
+    *   Garantir responsividade (Mobile/Desktop) e acessibilidade.
+    *   Criar assets visuais para marketing (prints, landing page).
+*   **Perfil:**
+    *   Domínio de Tailwind CSS e React.
+    *   Olho apurado para detalhes visuais (Pixel Perfect).
+    *   Capacidade de criar micro-interações.
+
+### C. Researcher Jurídico (O Curador)
+*   **Responsabilidade:**
+    *   Executar o "Daily Scan" (DOU, Câmara, RFB).
+    *   Traduzir o "juridiquês" para a linguagem do produto (Títulos curtos, Tags).
+    *   Cadastrar e Atualizar eventos no Banco de Dados (via Admin ou SQL direto no início).
+    *   Validar se o software reflete corretamente a norma vigente.
+*   **Perfil:**
+    *   Advogado Tributarista ou Contador Sênior.
+    *   Organizado e metódico.
+    *   Redação impecável e sintética.
+
+---
+
+## 3. Rituais Ágeis (Processo de Execução)
+
+Para manter o ritmo (Velocity), sugerimos Sprints de **1 semana** no primeiro mês.
+
+1.  **Segunda-feira (09:00): Planning (30min)**
+    *   Researcher: Apresenta as novidades da semana ("Saiu a Lei X").
+    *   Tech Lead: Define o que será codado na semana.
+    
+2.  **Quarta-feira (Check-point Async):**
+    *   Report via Slack/Discord: "Impedimentos?".
+
+3.  **Sexta-feira (16:00): Demo & Review (45min)**
+    *   Tech Lead: Apresenta as telas prontas em Staging.
+    *   Researcher: Valida se os dados estão corretos.
+    *   **Go/No-Go:** Decide se sobe para Produção.
+
+---
+
+## 4. Próximos Passos (Contratação)
+1.  **Divulgar Vaga Tech Lead:** LinkedIn e comunidades (Rocketseat, Filipe Deschamps).
+2.  **Selecionar Researcher:** Buscar em escritórios parceiros ou academias tributárias.
+3.  **Onboarding:** Entregar este pacote de documentação ("Brain do Atlas") para o time.

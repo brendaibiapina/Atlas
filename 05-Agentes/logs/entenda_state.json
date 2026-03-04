@@ -1,0 +1,80 @@
+{
+  "hash": "064e5f6bfe6144811d2666ec4a99279a",
+  "sections": {
+    "O que muda?": [
+      "Tributos que passarão a existir:",
+      "CBS: Contribuição sobre Bens e Serviços (Federal);",
+      "IBS: Imposto sobre Bens e Serviços (Estadual e Municipal); e",
+      "IS: Imposto Seletivo (Federal)",
+      "Imposto Seletivo:",
+      "Criado para desestimular o consumo de bens e serviços prejudiciais à saúde ou ao meio ambiente.",
+      "Incide sobre produção, extração, comercialização ou importação de itens definidos por lei.",
+      "A partir de 2027, entrará em vigor.",
+      "Tributos que deixarão de existir:",
+      "PIS/PASEP: Contribuição para o Programa de Integração Social e Programa de Formação do Patrimônio do Servidor Público (Federal);",
+      "Cofins: Contribuição para Financiamento da Seguridade Social (Federal);",
+      "ICMS: Imposto sobre Circulação de Mercadorias e Serviços (Estadual); e",
+      "ISSQN: Imposto sobre Serviços de Qualquer Natureza (Municipal).",
+      "Imposto sobre Produtos Industrializados (IPI):",
+      "A partir de 2027, terá alíquota reduzida a zero para quase todos os produtos; e",
+      "Será mantido apenas para preservar a competitividade da Zona Franca de Manaus."
+    ],
+    "Reforma Tributária do Consumo: Modernização, Simplificação e Alinhamento às Melhores Práticas Internacionais": [
+      "A Reforma Tributária do Consumo, atualmente em processo de implementação no Brasil, representa uma transformação profunda no sistema de tributos indiretos. Ela busca simplificar, modernizar e alinhar o modelo brasileiro às melhores práticas internacionais, promovendo maior eficiência econômica, segurança jurídica e competitividade."
+    ],
+    "1. Objetivos da Reforma Tributária do Consumo": [
+      "Simplificação: Unificação de diversos tributos (PIS, Cofins, IPI, ICMS e ISS) em dois grandes impostos:",
+      "IBS (Imposto sobre Bens e Serviços) — de competência compartilhada entre estados e municípios.",
+      "CBS (Contribuição sobre Bens e Serviços) — de competência federal.",
+      "Neutralidade: Redução das distorções econômicas, eliminando a cumulatividade e os efeitos em cascata.",
+      "Transparência: Maior clareza para consumidores e empresas sobre os tributos incidentes.",
+      "Segurança Jurídica: Redução da litigiosidade, com regras mais claras e consolidadas."
+    ],
+    "2. Alinhamento às Melhores Práticas Internacionais": [
+      "A reforma adota os princípios recomendados pela Organização para a Cooperação e Desenvolvimento Econômico (OCDE) e outros organismos internacionais:",
+      "Modelo de IVA (Imposto sobre Valor Agregado): Amplo, não cumulativo e com crédito financeiro pleno, abrangendo todos os setores da economia.",
+      "Princípio do destino com alíquotas uniformes: A tributação ocorre no local do consumo, promovendo justiça fiscal entre estados e municípios.",
+      "Base ampla: Reduz espaço para distorções, benefícios setoriais e complexidade na gestão tributária.",
+      "Desoneração de exportações: Elimina o resíduo tributário nas exportações, alinhando-se às regras do comércio internacional."
+    ],
+    "3. Administração Tributária 3.0 e a Nova Era da Fiscalização": [
+      "A implementação da Reforma Tributária também é uma oportunidade para o Brasil avançar na modernização dos processos fiscais, aderindo ao conceito de Administração Tributária 3.0, que se baseia em:",
+      "Digitalização total: A substituição de declarações e obrigações acessórias por sistemas digitais que capturam informações em tempo real.",
+      "Compliance colaborativo: A relação entre fisco e contribuinte se torna mais transparente e cooperativa, com incentivo à conformidade espontânea.",
+      "Integração de dados: Compartilhamento eficiente de dados entre União, estados e municípios, reduzindo redundâncias e aumentando a eficiência.",
+      "Fiscalização preditiva e preventiva: Aplicação preventiva da capacidade de identificar riscos e prevenir fraudes.",
+      "Automação de processos: Redução significativa do custo de compliance tanto para empresas quanto para a administração pública."
+    ],
+    "4. Desafios e Perspectivas": [
+      "Transição complexa: O período de transição exige adaptação dos contribuintes e dos fiscos.",
+      "Capacitação tecnológica: Necessidade de investimentos em infraestrutura tecnológica e treinamento de pessoal."
+    ],
+    "5. Conclusão": [
+      "A Reforma Tributária do Consumo representa um avanço histórico para o Brasil, alinhando o sistema tributário às melhores práticas internacionais e preparando o país para a era da Administração Tributária 3.0. Com um modelo mais simples, transparente e eficiente, a expectativa é de um ambiente de negócios mais favorável, com redução de custos, maior segurança jurídica e estímulo ao crescimento econômico sustentável."
+    ],
+    "Transição": [],
+    "2026": [
+      "Ano teste da CBS e do IBS;",
+      "O montante arrecadado da CBS (0,9%) e do IBS (0,1%) será compensado com o valor devido de PIS e COFINS, no mesmo período de liquidação;",
+      "Ficará isenta a arrecadação da taxa de prova da CBS e do IBS, em 2026, para os contribuintes que cumprirem com as obrigações acessórias, conforme a legislação."
+    ],
+    "2027 e 2028": [
+      "Cobrança da CBS, que será reduzida em 0,1 (um décimo) ponto percentual - CBS: 99,9%",
+      "Extinção do PIS e da COFINS;",
+      "Redução a zero das alíquotas do IPI sobre todos os produtos, exceto aqueles que também sejam industrializados na Zona Franca de Manaus (ZFM);",
+      "Instituição do Imposto Seletivo (IS): Criado para desestimular o consumo de bens e serviços prejudiciais à saúde ou ao meio ambiente. Incide sobre: produção, extração, comercialização ou importação de itens definidos por lei."
+    ],
+    "2029 a 2032": [
+      "Transição do ICMS e do ISS para o IBS via aumento gradual da alíquota o IBS e redução gradual das alíquotas do ICMS e do ISS;",
+      "2029: 10% IBS e 90% ICMS e ISS;",
+      "2030: 20% IBS e 80% ICMS e ISS;",
+      "2031: 30% IBS e 70% ICMS e ISS;",
+      "2032: 40% IBS e 60% ICMS e ISS."
+    ],
+    "2033": [
+      "Vigência integral do novo modelo;",
+      "Extinção do ICMS e do ISS."
+    ]
+  },
+  "last_check": "2026-03-04T07:01:10.432727"
+}

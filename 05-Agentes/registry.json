@@ -1,0 +1,59 @@
+{
+    "agents": [
+        {
+            "name": "rfb_news",
+            "module": "agents.rfb_news_agent",
+            "class": "RFBNewsAgent",
+            "schedule": "daily",
+            "enabled": true,
+            "description": "Coleta notícias oficiais da RFB sobre a Reforma Tributária",
+            "last_run": "2026-03-04T07:01:08.154178"
+        },
+        {
+            "name": "rfb_marcos",
+            "module": "agents.rfb_marcos_agent",
+            "class": "RFBMarcosAgent",
+            "schedule": "daily",
+            "enabled": true,
+            "description": "Monitora novos marcos regulatórios (LCs, Portarias, ECs)",
+            "last_run": "2026-03-04T07:01:08.332511"
+        },
+        {
+            "name": "rfb_orientacoes",
+            "module": "agents.rfb_orientacoes_agent",
+            "class": "RFBOrientacoesAgent",
+            "schedule": "daily",
+            "enabled": true,
+            "description": "Coleta atualizações nas orientações de obrigações para 2026",
+            "last_run": "2026-03-04T07:01:08.622021"
+        },
+        {
+            "name": "dou_monitor",
+            "module": "agents.dou_monitor_agent",
+            "class": "DOUMonitorAgent",
+            "schedule": "daily",
+            "enabled": true,
+            "description": "Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária",
+            "last_run": "2026-03-04T07:01:10.278028"
+        },
+        {
+            "name": "rfb_entenda",
+            "module": "agents.rfb_entenda_agent",
+            "class": "RFBEntendaAgent",
+            "schedule": "daily",
+            "enabled": true,
+            "description": "Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)",
+            "last_run": "2026-03-04T07:01:10.434155"
+        },
+        {
+            "name": "system_design_squad",
+            "module": "agents.system_design_squad_agent",
+            "class": "SystemDesignSquadAgent",
+            "schedule": "weekly",
+            "enabled": true,
+            "description": "Time de especialistas em design de sistemas para revisar arquitetura, UX tecnica e consistencia",
+            "last_run": "2026-02-20T22:20:17.665436"
+        }
+    ],
+    "last_global_run": "2026-03-04T07:01:10.434158"
+}

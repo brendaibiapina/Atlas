@@ -1,0 +1,21 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/api/checkout/route": "app/api/checkout/route.js",
+  "/api/admin/records/route": "app/api/admin/records/route.js",
+  "/api/checkout/session/route": "app/api/checkout/session/route.js",
+  "/api/favorites/route": "app/api/favorites/route.js",
+  "/admin/page": "app/admin/page.js",
+  "/api/webhook/stripe/route": "app/api/webhook/stripe/route.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/preco/page": "app/preco/page.js",
+  "/sobre/page": "app/sobre/page.js",
+  "/sucesso/page": "app/sucesso/page.js",
+  "/dashboard/favoritos/page": "app/dashboard/favoritos/page.js",
+  "/dashboard/imobiliario/page": "app/dashboard/imobiliario/page.js",
+  "/dashboard/obrigacoes/page": "app/dashboard/obrigacoes/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/faq/page": "app/dashboard/faq/page.js",
+  "/dashboard/radar/page": "app/dashboard/radar/page.js",
+  "/dashboard/timeline/page": "app/dashboard/timeline/page.js"
+}

@@ -1,0 +1,51 @@
+# Conteúdo Exemplificativo (Seed Data)
+
+Baseado em:
+1.  **LC 214/2025**
+2.  **Orientações RFB 2026**
+3.  **Ato Conjunto RFB/CGIBS 2025 (Ref. Dez)**
+
+---
+
+## 1. Eventos (Timeline)
+
+| Data | Título | Tipo | Fonte Oficial |
+| :--- | :--- | :--- | :--- |
+| **01/01/2026** | **Início da cobrança teste (IBS/CBS)** | Marco Legal | LC 214/2025, Art. X |
+| **01/01/2026** | **Início da emissão de DF-e com destaque** | Obrigação | Ato Conjunto RFB/CGIBS |
+| **01/07/2026** | **Inscrição de PF no CNPJ (Contribuintes)** | Obrigação | Orientações RFB 2026 |
+| **(A definir)**| **Publicação do Regulamento do IBS** | Esperado | - |
+| **(A definir)**| **Publicação do Regulamento da CBS** | Esperado | - |
+| **+4 Meses** | **Fim do Período Educativo (Sem Multa)** | Prazo | Ato Conjunto RFB/CGIBS |
+
+---
+
+## 2. Obrigações e Status (2026)
+
+### A. Emissão de Documentos Fiscais
+> **Obrigação:** Emitir documentos fiscais eletrônicos com destaque da CBS e do IBS.
+> *   **Documentos Afetados:** NF-e, NFC-e, CT-e, CT-e OS, NFS-e, NFCom, NF3e, BP-e.
+> *   **Status:** 🟡 **EDUCATIVO** (Vigente a partir de 01/01/26)
+> *   **Detalhe:** "O contribuinte impossibilitado... por responsabilidade exclusiva do ente... não estará descumprindo."
+> *   **Penalidade:** Dispensada até 4º mês após regulamento.
+
+### B. Declaração de Regimes Específicos (DeRE)
+> **Obrigação:** Apresentar a DeRE para regimes de Instituições Financeiras, Planos de Saúde, etc.
+> *   **Status:** ⚙️ **EM CONSTRUÇÃO** (Leiaute pendente)
+> *   **Data:** "Quando disponibilizada".
+> *   **Fonte Pendente:** Aguardando Nota Técnica específica.
+
+### C. Plataformas Digitais
+> **Obrigação:** Prestar informações sobre operações/importações intermediadas.
+> *   **Status:** ⚙️ **EM CONSTRUÇÃO** (Leiaute pendente)
+> *   **Fonte Pendente:** Aguardando Ato Conjunto CGIBS/RFB.
+
+### D. Recolhimento (Pagamento)
+> **Obrigação:** Recolher IBS e CBS apurados (alíquota teste 0,1% / 0,9%).
+> *   **Status:** 🟢 **DISPENSADO** (Se emitir docs corretamente).
+> *   **Fonte:** Orientações RFB 2026 ("...estará dispensado do recolhimento").
+
+### E. Inscrição de Pessoa Física
+> **Obrigação:** Pessoas físicas contribuintes de IBS/CBS inscreverem-se no CNPJ.
+> *   **Status:** 🔵 **FUTURO** (A partir de Julho/2026).
+> *   **Fonte:** Orientações RFB 2026.

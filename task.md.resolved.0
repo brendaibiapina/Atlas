@@ -1,0 +1,13 @@
+# Task Checklist: Atlas da Reforma Tributária Specification
+
+- [ ] Research Official Sources (LC 214/2025, LC 227/2026, RFB Guidelines) <!-- id: 0 -->
+- [ ] Create PRD (Product Requirements Document) <!-- id: 1 -->
+- [ ] Create Information Architecture / Sitemap <!-- id: 2 -->
+- [ ] Create Low-fi Wireframes <!-- id: 3 -->
+- [ ] Create Data Model <!-- id: 4 -->
+- [ ] Create Taxonomy and Filters <!-- id: 5 -->
+- [ ] Create Alerting Logic and Email Templates <!-- id: 6 -->
+- [ ] Create Seed Data (Events/Obligations) <!-- id: 7 -->
+- [ ] Create Visual Direction Guide <!-- id: 8 -->
+- [ ] Create Microcopy <!-- id: 9 -->
+- [ ] Create Open Questions List <!-- id: 10 -->

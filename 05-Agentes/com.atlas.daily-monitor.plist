@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.atlas.daily-monitor</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/venv/bin/python</string>
+        <string>/Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/run_daily.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes</string>
+
+    <!-- Executa todos os dias às 07:00 da manhã -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- Log de saída -->
+    <key>StandardOutPath</key>
+    <string>/Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/launchd_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/launchd_stderr.log</string>
+
+    <!-- Variáveis de ambiente -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <!-- Se o Mac estava desligado no horário, roda assim que ligar -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+</dict>
+</plist>

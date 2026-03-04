@@ -1,0 +1,69 @@
+# Walkthrough: Atlas da Reforma Tributária (MVP v0.2)
+
+Este documento simula a experiência do usuário com o código desenvolvido até a Sprint 2.
+
+## 1. Landing Page (Pública)
+**Arquivo:** [src/app/page.tsx](file:///Users/brendaibiapina/.gemini/antigravity/brain/28eeaae0-40a1-4eed-a2ea-786c3f5bcbe0/src/app/page.tsx)
+*   **Hero:** "A bússola segura na Reforma Tributária".
+*   **Ação:** Usuário escolhe perfil ("Contador") e coloca e-mail.
+*   **Feedback:** Sistema confirma entrada na Waitlist.
+
+## 2. Login & Dashboard (Área Logada)
+**Arquivo:** `src/app/layout.tsx` (Sidebar) + [src/app/page.tsx](file:///Users/brendaibiapina/.gemini/antigravity/brain/28eeaae0-40a1-4eed-a2ea-786c3f5bcbe0/src/app/page.tsx) (Home)
+
+Ao entrar, o usuário vê:
+
+### A. Sidebar Lateral
+Menu fixo com acesso rápido:
+*   [x] Visão Geral (Home)
+*   [x] Obrigações 2026
+*   [ ] Timeline (Sprint 3)
+*   [ ] Radar Oficial
+*   [ ] Módulo Imobiliário (Sprint 3)
+
+### B. Widget "Status da Reforma"
+Um card no topo mostrando:
+*   **IBS:** `EM CONSTRUÇÃO`
+*   **CBS:** `EM CONSTRUÇÃO`
+*   **Seletivo:** `AGUARDA LC` (Badge Azul)
+
+### C. Feed "O que mudou"
+Lista das últimas atualizações do [seed.sql](file:///Users/brendaibiapina/.gemini/antigravity/brain/28eeaae0-40a1-4eed-a2ea-786c3f5bcbe0/database/seed.sql):
+1.  **Ato Conjunto RFB/CGIBS 01/25**: Badge `VIGENTE`. "Define período sem multas".
+2.  **Nota Técnica DeRE**: Badge `EM BREVE`. "Receita sinaliza leiaute para Fev".
+
+## 3. Checklist de Obrigações 2026
+**Arquivo:** [src/app/dashboard/obrigacoes/page.tsx](file:///Users/brendaibiapina/.gemini/antigravity/brain/28eeaae0-40a1-4eed-a2ea-786c3f5bcbe0/src/app/dashboard/obrigacoes/page.tsx)
+
+O usuário clica no menu "Obrigações 2026" e vê uma tabela interativa:
+
+| Status | Obrigação | Fonte | Ação |
+| :--- | :--- | :--- | :--- |
+| 🟢 `EDUCATIVO` | **Emitir NF-e com destaque IBS/CBS** | Ato RFB 01/25 | [Ver Detalhes] |
+| 🔵 `FUTURO` | **Inscrição de Pessoa Física** | Orientações 2026 | [Ver Detalhes] |
+| 🟡 `EM CONST` | **Declaração DeRE** | NT 2026.001 | [Acompanhar] |
+
+*   **Filtros:** Ao clicar em "Vigentes", a lista filtra apenas o que requer ação imediata.
+
+## 4. Módulo Imobiliário (Sprint 3)
+**Arquivo:** [src/app/dashboard/imobiliario/page.tsx](file:///Users/brendaibiapina/.gemini/antigravity/brain/28eeaae0-40a1-4eed-a2ea-786c3f5bcbe0/src/app/dashboard/imobiliario/page.tsx)
+
+*   **Painel Comparativo:** Cards lado a lado mostrando "Cenário Atual (ITBI)" vs "Cenário Reforma (IBS/CBS)".
+*   **Simulador de Redutor:** Variação dinâmica ao trocar abas (Venda / Locação / Incorporação).
+*   **Radar Setorial:** Lista filtrada apenas com notícias sobre imóveis (tags: `#ITBI`, `#Locação`).
+
+## 5. Timeline Visual (Sprint 3)
+**Arquivo:** [src/app/dashboard/timeline/page.tsx](file:///Users/brendaibiapina/.gemini/antigravity/brain/28eeaae0-40a1-4eed-a2ea-786c3f5bcbe0/src/app/dashboard/timeline/page.tsx)
+
+*   Visualização vertical cronológica.
+*   Distinção clara entre Passado (Check `COMPLETED`), Presente (Destaque `CURRENT`) e Futuro (`FUTURE`).
+*   Marco Chave: **01/01/2026** (Início da Cobrança de Teste).
+
+## 6. Sistema de Alertas
+**Arquivo:** [src/lib/email-templates.ts](file:///Users/brendaibiapina/.gemini/antigravity/brain/28eeaae0-40a1-4eed-a2ea-786c3f5bcbe0/src/lib/email-templates.ts)
+
+*   Templates HTML pré-formatados para:
+    *   Boas-vindas.
+    *   Alerta Urgente (Nova Norma).
+    *   Resumo Semanal (Digest).
+

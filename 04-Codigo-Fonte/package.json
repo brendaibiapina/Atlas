@@ -1,0 +1,46 @@
+{
+  "name": "atlas-reforma-tributaria",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.18.0 <23"
+  },
+  "scripts": {
+    "predev": "node scripts/check-node-version.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/check-node-version.mjs",
+    "build": "next build",
+    "prestart": "node scripts/check-node-version.mjs",
+    "start": "next start",
+    "lint": "next lint",
+    "chatbot:sync": "node scripts/sync-chatbot-kb.mjs",
+    "payment:check": "node scripts/payment-checklist.mjs",
+    "smoke:prod": "node scripts/smoke-prod.mjs",
+    "qa:critical": "node scripts/qa-critical.mjs",
+    "test:domain": "tsx --test src/services/__tests__/simulador.test.ts src/services/__tests__/faq-chat.test.ts"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^8.8.0",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.97.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.330.0",
+    "next": "^14.2.35",
+    "react": "^18",
+    "react-dom": "^18",
+    "stripe": "^20.3.1",
+    "tailwind-merge": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "^14.2.35",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  }
+}

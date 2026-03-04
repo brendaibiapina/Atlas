@@ -1,0 +1,81 @@
+
+============================================================
+📊 RELATÓRIO DIÁRIO — 26/02/2026 07:00
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    42
+  Novos inseridos:    0
+  Potenciais (dry-run): 42
+  Erros:              0
+  Duração:            3.4s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 23 extraídos, 0 inseridos, 23 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+
+--- DETALHES ---
+
+
+────────────────────────────────────────
+rfb_news:
+━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 23
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 23
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-26T07:00:05.713250
+  Fim: 2026-02-26T07:00:08.235173
+
+────────────────────────────────────────
+rfb_marcos:
+━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-26T07:00:08.235798
+  Fim: 2026-02-26T07:00:08.355384
+
+────────────────────────────────────────
+rfb_orientacoes:
+━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-26T07:00:08.356694
+  Fim: 2026-02-26T07:00:08.481825
+
+────────────────────────────────────────
+dou_monitor:
+━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-26T07:00:08.483203
+  Fim: 2026-02-26T07:00:08.953929
+
+────────────────────────────────────────
+rfb_entenda:
+━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-26T07:00:08.955505
+  Fim: 2026-02-26T07:00:09.092024

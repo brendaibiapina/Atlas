@@ -1,0 +1,63 @@
+# Atlas da Reforma Tributária — Project Doc
+
+Bem-vindo ao repositório de documentação e código do **Atlas da Reforma Tributária**. 
+Aqui está o mapa de todos os artefatos gerados para a concepção, desenvolvimento e operação do produto.
+
+---
+
+## 📂 1. Estratégia & Produto
+*Documentos de visão, escopo e design.*
+
+*   **[PRD_Atlas_Reforma.md](./PRD_Atlas_Reforma.md)** — Visão do Produto, Personas e Requisitos (O "O que" e "Por que").
+*   **[IA_Sitemap.md](./IA_Sitemap.md)** — Mapa do Site e Fluxos de Navegação.
+*   **[Wireframes_LowFi.md](./Wireframes_LowFi.md)** — Esboços visuais das telas principais (ASCII).
+*   **[Visual_Direction.md](./Visual_Direction.md)** — Guia de Estilo (Cores, Tipografia "Tech Clean").
+*   **[Microcopy_App.md](./Microcopy_App.md)** — Tons de voz e textos chaves.
+*   **[Open_Questions.md](./Open_Questions.md)** — Pontos de atenção estratégica.
+
+## 📂 2. Especificação Técnica
+*Documentos para engenharia e dados.*
+
+*   **[DataModel.md](./DataModel.md)** — Modelagem do Banco de Dados (Entidades e Relacionamentos).
+*   **[Taxonomy.md](./Taxonomy.md)** — Sistema de Tags e Categorização.
+*   **[Alerting_Spec.md](./Alerting_Spec.md)** — Lógica do Motor de Alertas.
+*   **[Seed_Events_Obligations.md](./Seed_Events_Obligations.md)** — Dados iniciais (Conteúdo Oficial 2026).
+*   **[Opereational_Plan.md](./Operational_Plan.md)** — Plano de Build, Infraestrutura e Lançamento.
+
+## 📂 3. Código Fonte (MVP)
+*Implementação das Sprints 1, 2 e 3.*
+
+### Configuração & Dados
+*   **[README_SETUP.md](./README_SETUP.md)** — Como rodar o projeto.
+*   **[database/schema.sql](./database/schema.sql)** — SQL para criar o banco (Postgres).
+*   **[database/seed.sql](./database/seed.sql)** — SQL para popular dados iniciais.
+*   **[src/lib/types.ts](./src/lib/types.ts)** — Definições TypeScript.
+*   **[src/lib/mockData.ts](./src/lib/mockData.ts)** — Mock de dados para frontend.
+*   **[src/lib/email-templates.ts](./src/lib/email-templates.ts)** — HTML de e-mails.
+
+### Frontend (Next.js)
+*   **[src/app/page.tsx](./src/app/page.tsx)** — Landing Page (Waitlist).
+*   **[src/app/dashboard/layout.tsx](./src/app/dashboard/layout.tsx)** — Layout Logado (Sidebar).
+*   **[src/app/dashboard/page.tsx](./src/app/dashboard/page.tsx)** — Home do Dashboard (Resumo).
+*   **[src/app/dashboard/obrigacoes/page.tsx](./src/app/dashboard/obrigacoes/page.tsx)** — Checklist Opcional.
+*   **[src/app/dashboard/imobiliario/page.tsx](./src/app/dashboard/imobiliario/page.tsx)** — Módulo Imobiliário.
+*   **[src/app/dashboard/timeline/page.tsx](./src/app/dashboard/timeline/page.tsx)** — Visualização de Timeline.
+
+### UI Components
+*   **[src/components/ui/Badge.tsx](./src/components/ui/Badge.tsx)**
+*   **[src/components/ui/Button.tsx](./src/components/ui/Button.tsx)**
+*   **[src/components/ui/Card.tsx](./src/components/ui/Card.tsx)**
+
+## 📂 4. Gestão & Execução
+*Planejamento tático.*
+
+*   **[Dev_Team_Structure.md](./Dev_Team_Structure.md)** — Quem contratar (Squad).
+*   **[Sprint_1_Backlog.md](./Sprint_1_Backlog.md)** — Backlog Sprint 1.
+*   **[Sprint_2_Backlog.md](./Sprint_2_Backlog.md)** — Backlog Sprint 2.
+*   **[Sprint_2_Implementation_Plan.md](./Sprint_2_Implementation_Plan.md)** — Plano Técnico Sprint 2.
+*   **[Sprint_3_Backlog.md](./Sprint_3_Backlog.md)** — Backlog Sprint 3.
+*   **[Sprint_3_Implementation_Plan.md](./Sprint_3_Implementation_Plan.md)** — Plano Técnico Sprint 3.
+*   **[walkthrough.md](./walkthrough.md)** — Tour funcional do sistema.
+
+---
+*Gerado por Antigravity Agent - 18/02/2026*

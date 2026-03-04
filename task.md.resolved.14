@@ -1,0 +1,32 @@
+# Task Checklist: Atlas da Reforma Tributária
+
+## Phase 1: Product Specification (Completed)
+- [x] Research Official Sources (LC 214/2025, LC 227/2026, RFB Guidelines) <!-- id: 0 -->
+- [x] Create PRD (Product Requirements Document) <!-- id: 1 -->
+- [x] Create Information Architecture / Sitemap <!-- id: 2 -->
+- [x] Create Low-fi Wireframes <!-- id: 3 -->
+- [x] Create Data Model <!-- id: 4 -->
+- [x] Create Taxonomy and Filters <!-- id: 5 -->
+- [x] Create Alerting Logic and Email Templates <!-- id: 6 -->
+- [x] Create Seed Data (Events/Obligations) <!-- id: 7 -->
+- [x] Create Visual Direction Guide <!-- id: 8 -->
+- [x] Create Microcopy <!-- id: 9 -->
+- [x] Create Open Questions List <!-- id: 10 -->
+
+## Phase 2: Operationalization (Completed)
+- [x] Create Operational Master Plan (Build, Content, GTM) <!-- id: 11 -->
+- [x] Define Content Operations Workflow (The "Research Routine") <!-- id: 12 -->
+- [x] Define Tech Stack & Infrastructure Costs <!-- id: 13 -->
+- [x] Define Launch Strategy (Pre-sale + MVP) <!-- id: 14 -->
+
+## Phase 3: Development (Sprint 1: Foundation) (Completed)
+- [x] Create Sprint 1 Backlog <!-- id: 15 -->
+- [x] Initialize Database Schema (SQL) <!-- id: 16 -->
+- [x] Setup Project Repository Structure (Next.js Mockup) <!-- id: 17 -->
+- [x] Implement Landing Page (Pre-sale/Waitlist) <!-- id: 18 -->
+
+## Phase 4: Development (Sprint 2: Core Features)
+- [x] Create Sprint 2 Backlog <!-- id: 19 -->
+- [ ] Implement UI Components (Badge, Card, Button) <!-- id: 20 -->
+- [ ] Implement Dashboard Home (Status & Updates) <!-- id: 21 -->
+- [ ] Implement Obligations Checklist ('Obrigações 2026') <!-- id: 22 -->

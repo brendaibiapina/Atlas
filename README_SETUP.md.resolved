@@ -1,0 +1,46 @@
+# Projeto Atlas - Setup Guide
+
+## 1. Inicialização do Projeto
+Rode os seguintes comandos no terminal para gerar a estrutura base:
+
+```bash
+# Criar aplicação Next.js com TypeScript e Tailwind
+npx create-next-app@latest atlas-reforma --typescript --tailwind --eslint
+
+# Entrar na pasta
+cd atlas-reforma
+
+# Instalar bibliotecas de UI e Ícones
+npm install lucide-react clsx tailwind-merge framer-motion
+```
+
+## 2. Estrutura de Pastas Recomendada
+
+```
+atlas-reforma/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx       # Layout Global (Fontes)
+│   │   └── page.tsx         # Landing Page (Waitlist)
+│   ├── components/
+│   │   ├── ui/              # Componentes genéricos (Buttons, Inputs)
+│   │   └── features/        # Componentes de negócio (WaitlistForm)
+│   ├── lib/
+│   │   ├── supabase.ts      # Cliente do Banco de Dados
+│   │   └── types.ts         # Definições TS baseadas no Schema
+│   └── styles/
+│       └── globals.css      # Variáveis de Cor (Atlas Theme)
+├── public/
+│   └── assets/              # Imagens/Logos
+└── database/
+    ├── schema.sql           # SQL de setup
+    └── seed.sql             # Dados iniciais
+```
+
+## 3. Configuração de Variáveis (env.local)
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=seu_projeto_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sua_chave_publica
+DATABASE_URL=postgres://...
+```

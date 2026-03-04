@@ -1,0 +1,2147 @@
+2026-02-20 09:44:21.904 | INFO     | __main__:run_daily:51 - ============================================================
+2026-02-20 09:44:21.904 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 20/02/2026 09:44
+2026-02-20 09:44:21.904 | INFO     | __main__:run_daily:53 - ============================================================
+2026-02-20 09:44:21.904 | WARNING  | config:get_supabase:21 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-02-20 09:44:21.905 | WARNING  | __main__:run_daily:59 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-02-20 09:44:21.905 | INFO     | __main__:run_daily:70 - 📋 5 agentes diários para executar:
+
+2026-02-20 09:44:21.905 | INFO     | __main__:run_daily:72 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-02-20 09:44:21.905 | INFO     | __main__:run_daily:72 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-02-20 09:44:21.905 | INFO     | __main__:run_daily:72 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-02-20 09:44:21.905 | INFO     | __main__:run_daily:72 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-02-20 09:44:21.905 | INFO     | __main__:run_daily:72 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-02-20 09:44:21.905 | INFO     | __main__:run_daily:76 - 
+────────────────────────────────────────
+2026-02-20 09:44:21.905 | INFO     | __main__:run_daily:77 - ▶ Executando: rfb_news
+2026-02-20 09:44:21.946 | INFO     | agents.base_agent:run:97 - 🚀 Iniciando agente: rfb_news
+2026-02-20 09:44:21.946 | INFO     | agents.base_agent:run:98 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-20 09:44:21.946 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-20 09:44:22.116 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 229929 chars
+2026-02-20 09:44:22.146 | INFO     | agents.rfb_news_agent:parse:103 - 📰 22 notícias únicas extraídas
+2026-02-20 09:44:22.147 | INFO     | agents.base_agent:run:111 - 📦 22 itens extraídos da fonte
+2026-02-20 09:44:22.147 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-02-20 09:44:22.147 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-02-20 09:44:22.150 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-02-20 09:44:22.150 | INFO     | __main__:run_daily:88 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 22
+  Novos inseridos: 22
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-20T09:44:21.946216
+  Fim: 2026-02-20T09:44:22.150852
+2026-02-20 09:44:22.150 | INFO     | __main__:run_daily:76 - 
+────────────────────────────────────────
+2026-02-20 09:44:22.150 | INFO     | __main__:run_daily:77 - ▶ Executando: rfb_marcos
+2026-02-20 09:44:22.151 | INFO     | agents.base_agent:run:97 - 🚀 Iniciando agente: rfb_marcos
+2026-02-20 09:44:22.151 | INFO     | agents.base_agent:run:98 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-20 09:44:22.151 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-20 09:44:22.331 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 180389 chars
+2026-02-20 09:44:22.371 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-02-20 09:44:22.371 | INFO     | agents.base_agent:run:111 - 📦 5 itens extraídos da fonte
+2026-02-20 09:44:22.371 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-02-20 09:44:22.371 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-02-20 09:44:22.371 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-02-20 09:44:22.371 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-02-20 09:44:22.371 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-02-20 09:44:22.371 | INFO     | __main__:run_daily:88 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-20T09:44:22.151460
+  Fim: 2026-02-20T09:44:22.371756
+2026-02-20 09:44:22.371 | INFO     | __main__:run_daily:76 - 
+────────────────────────────────────────
+2026-02-20 09:44:22.371 | INFO     | __main__:run_daily:77 - ▶ Executando: rfb_orientacoes
+2026-02-20 09:44:22.373 | INFO     | agents.base_agent:run:97 - 🚀 Iniciando agente: rfb_orientacoes
+2026-02-20 09:44:22.373 | INFO     | agents.base_agent:run:98 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-20 09:44:22.374 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-20 09:44:22.474 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 183274 chars
+2026-02-20 09:44:22.522 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:111 - 📦 14 itens extraídos da fonte
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-02-20 09:44:22.522 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-02-20 09:44:22.523 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-02-20 09:44:22.523 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-02-20 09:44:22.523 | INFO     | agents.base_agent:run:131 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-02-20 09:44:22.523 | INFO     | __main__:run_daily:88 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-20T09:44:22.373904
+  Fim: 2026-02-20T09:44:22.523088
+2026-02-20 09:44:22.523 | INFO     | __main__:run_daily:76 - 
+────────────────────────────────────────
+2026-02-20 09:44:22.523 | INFO     | __main__:run_daily:77 - ▶ Executando: dou_monitor
+2026-02-20 09:44:22.524 | INFO     | agents.base_agent:run:97 - 🚀 Iniciando agente: dou_monitor
+2026-02-20 09:44:22.524 | INFO     | agents.base_agent:run:98 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-02-20 09:44:22.524 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-02-20 09:44:23.870 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 189599 chars
+2026-02-20 09:44:23.902 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-02-20 09:44:23.903 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-02-20 09:44:23.903 | INFO     | agents.base_agent:run:111 - 📦 0 itens extraídos da fonte
+2026-02-20 09:44:23.903 | INFO     | __main__:run_daily:88 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-20T09:44:22.524071
+  Fim: 2026-02-20T09:44:23.903788
+2026-02-20 09:44:23.903 | INFO     | __main__:run_daily:76 - 
+────────────────────────────────────────
+2026-02-20 09:44:23.903 | INFO     | __main__:run_daily:77 - ▶ Executando: rfb_entenda
+2026-02-20 09:44:23.905 | INFO     | agents.base_agent:run:97 - 🚀 Iniciando agente: rfb_entenda
+2026-02-20 09:44:23.905 | INFO     | agents.base_agent:run:98 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-20 09:44:23.905 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-20 09:44:24.004 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 203732 chars
+2026-02-20 09:44:24.048 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-02-20 09:44:24.049 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-02-20 09:44:24.049 | INFO     | agents.base_agent:run:111 - 📦 0 itens extraídos da fonte
+2026-02-20 09:44:24.049 | INFO     | __main__:run_daily:88 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-20T09:44:23.905111
+  Fim: 2026-02-20T09:44:24.049777
+2026-02-20 09:44:24.050 | INFO     | __main__:run_daily:134 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 20/02/2026 09:44
+============================================================
+  Agentes executados: 5
+  Itens extraídos:    41
+  Novos inseridos:    41
+  Erros:              0
+  Duração:            2.1s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 22 extraídos, 22 novos
+  ✅ rfb_marcos: 5 extraídos, 5 novos
+  ✅ rfb_orientacoes: 14 extraídos, 14 novos
+  ✅ dou_monitor: 0 extraídos, 0 novos
+  ✅ rfb_entenda: 0 extraídos, 0 novos
+============================================================
+2026-02-20 09:44:24.050 | INFO     | __main__:run_daily:144 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-02-20_0944.txt
+2026-02-21 07:02:42.518 | INFO     | __main__:run_daily:51 - ============================================================
+2026-02-21 07:02:42.521 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 21/02/2026 07:02
+2026-02-21 07:02:42.521 | INFO     | __main__:run_daily:53 - ============================================================
+2026-02-21 07:02:42.523 | WARNING  | config:get_supabase:21 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-02-21 07:02:42.523 | WARNING  | __main__:run_daily:59 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-02-21 07:02:42.523 | INFO     | __main__:run_daily:70 - 📋 5 agentes diários para executar:
+
+2026-02-21 07:02:42.523 | INFO     | __main__:run_daily:72 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-02-21 07:02:42.523 | INFO     | __main__:run_daily:72 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-02-21 07:02:42.523 | INFO     | __main__:run_daily:72 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-02-21 07:02:42.523 | INFO     | __main__:run_daily:72 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-02-21 07:02:42.523 | INFO     | __main__:run_daily:72 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-02-21 07:02:42.523 | INFO     | __main__:run_daily:76 - 
+────────────────────────────────────────
+2026-02-21 07:02:42.523 | INFO     | __main__:run_daily:77 - ▶ Executando: rfb_news
+2026-02-21 07:02:42.577 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-02-21 07:02:42.577 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-21 07:02:42.577 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-21 07:02:42.788 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 229929 chars
+2026-02-21 07:02:42.831 | INFO     | agents.rfb_news_agent:parse:103 - 📰 22 notícias únicas extraídas
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:112 - 📦 22 itens extraídos da fonte
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-02-21 07:02:42.831 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-02-21 07:02:42.831 | INFO     | __main__:run_daily:88 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 22
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 22
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-21T07:02:42.577470
+  Fim: 2026-02-21T07:02:42.831807
+2026-02-21 07:02:42.831 | INFO     | __main__:run_daily:76 - 
+────────────────────────────────────────
+2026-02-21 07:02:42.831 | INFO     | __main__:run_daily:77 - ▶ Executando: rfb_marcos
+2026-02-21 07:02:42.832 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-02-21 07:02:42.832 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-21 07:02:42.832 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-21 07:02:43.073 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 180383 chars
+2026-02-21 07:02:43.115 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-02-21 07:02:43.115 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-02-21 07:02:43.116 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-02-21 07:02:43.116 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-02-21 07:02:43.116 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-02-21 07:02:43.116 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-02-21 07:02:43.116 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-02-21 07:02:43.116 | INFO     | __main__:run_daily:88 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-21T07:02:42.832641
+  Fim: 2026-02-21T07:02:43.116153
+2026-02-21 07:02:43.116 | INFO     | __main__:run_daily:76 - 
+────────────────────────────────────────
+2026-02-21 07:02:43.116 | INFO     | __main__:run_daily:77 - ▶ Executando: rfb_orientacoes
+2026-02-21 07:02:43.116 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-02-21 07:02:43.116 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-21 07:02:43.116 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-21 07:02:43.485 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 183274 chars
+2026-02-21 07:02:43.534 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-02-21 07:02:43.534 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-02-21 07:02:43.535 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-02-21 07:02:43.535 | INFO     | __main__:run_daily:88 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-21T07:02:43.116781
+  Fim: 2026-02-21T07:02:43.535053
+2026-02-21 07:02:43.535 | INFO     | __main__:run_daily:76 - 
+────────────────────────────────────────
+2026-02-21 07:02:43.535 | INFO     | __main__:run_daily:77 - ▶ Executando: dou_monitor
+2026-02-21 07:02:43.536 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-02-21 07:02:43.536 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-02-21 07:02:43.536 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-02-21 07:02:44.273 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 189591 chars
+2026-02-21 07:02:44.305 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-02-21 07:02:44.306 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-02-21 07:02:44.306 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-21 07:02:44.306 | INFO     | __main__:run_daily:88 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-21T07:02:43.536078
+  Fim: 2026-02-21T07:02:44.306786
+2026-02-21 07:02:44.306 | INFO     | __main__:run_daily:76 - 
+────────────────────────────────────────
+2026-02-21 07:02:44.306 | INFO     | __main__:run_daily:77 - ▶ Executando: rfb_entenda
+2026-02-21 07:02:44.308 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-02-21 07:02:44.308 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-21 07:02:44.308 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-21 07:02:44.511 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 203732 chars
+2026-02-21 07:02:44.555 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-02-21 07:02:44.556 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-02-21 07:02:44.556 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-21 07:02:44.556 | INFO     | __main__:run_daily:88 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-21T07:02:44.308076
+  Fim: 2026-02-21T07:02:44.556317
+2026-02-21 07:02:44.557 | INFO     | __main__:run_daily:137 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 21/02/2026 07:02
+============================================================
+  Agentes executados: 5
+  Itens extraídos:    41
+  Novos inseridos:    0
+  Potenciais (dry-run): 41
+  Erros:              0
+  Duração:            2.0s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 22 extraídos, 0 inseridos, 22 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-02-21 07:02:44.557 | INFO     | __main__:run_daily:147 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-02-21_0702.txt
+2026-02-22 07:00:03.718 | INFO     | __main__:run_daily:51 - ============================================================
+2026-02-22 07:00:03.719 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 22/02/2026 07:00
+2026-02-22 07:00:03.719 | INFO     | __main__:run_daily:53 - ============================================================
+2026-02-22 07:00:03.719 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-02-22 07:00:03.719 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-02-22 07:00:03.719 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-02-22 07:00:03.719 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-02-22 07:00:03.719 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-02-22 07:00:03.719 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-02-22 07:00:03.719 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-02-22 07:00:03.719 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-02-22 07:00:03.719 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-22 07:00:03.720 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-02-22 07:00:03.770 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-02-22 07:00:03.770 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-22 07:00:03.770 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-22 07:00:03.933 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 229929 chars
+2026-02-22 07:00:03.963 | INFO     | agents.rfb_news_agent:parse:103 - 📰 22 notícias únicas extraídas
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:112 - 📦 22 itens extraídos da fonte
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-02-22 07:00:03.963 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-02-22 07:00:03.963 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 22
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 22
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-22T07:00:03.770818
+  Fim: 2026-02-22T07:00:03.963958
+2026-02-22 07:00:03.963 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-22 07:00:03.964 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-02-22 07:00:03.964 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-02-22 07:00:03.964 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-22 07:00:03.964 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-22 07:00:04.047 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 180383 chars
+2026-02-22 07:00:04.072 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-02-22 07:00:04.072 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-02-22 07:00:04.072 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-02-22 07:00:04.072 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-02-22 07:00:04.072 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-02-22 07:00:04.072 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-02-22 07:00:04.072 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-02-22 07:00:04.072 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-22T07:00:03.964401
+  Fim: 2026-02-22T07:00:04.072374
+2026-02-22 07:00:04.072 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-22 07:00:04.072 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-02-22 07:00:04.073 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-02-22 07:00:04.073 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-22 07:00:04.073 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-22 07:00:04.162 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 183268 chars
+2026-02-22 07:00:04.199 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-02-22 07:00:04.200 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-02-22 07:00:04.200 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-22T07:00:04.073493
+  Fim: 2026-02-22T07:00:04.200398
+2026-02-22 07:00:04.200 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-22 07:00:04.200 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-02-22 07:00:04.201 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-02-22 07:00:04.201 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-02-22 07:00:04.201 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-02-22 07:00:04.754 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 189597 chars
+2026-02-22 07:00:04.787 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-02-22 07:00:04.789 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-02-22 07:00:04.789 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-22 07:00:04.789 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-22T07:00:04.201348
+  Fim: 2026-02-22T07:00:04.789252
+2026-02-22 07:00:04.789 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-22 07:00:04.789 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-02-22 07:00:04.790 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-02-22 07:00:04.790 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-22 07:00:04.790 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-22 07:00:04.964 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 203732 chars
+2026-02-22 07:00:05.011 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-02-22 07:00:05.013 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-02-22 07:00:05.013 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-22 07:00:05.013 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-22T07:00:04.790679
+  Fim: 2026-02-22T07:00:05.013115
+2026-02-22 07:00:05.014 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 22/02/2026 07:00
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    41
+  Novos inseridos:    0
+  Potenciais (dry-run): 41
+  Erros:              0
+  Duração:            1.3s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 22 extraídos, 0 inseridos, 22 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-02-22 07:00:05.014 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-02-22_0700.txt
+2026-02-23 07:00:02.053 | INFO     | __main__:run_daily:51 - ============================================================
+2026-02-23 07:00:02.055 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 23/02/2026 07:00
+2026-02-23 07:00:02.055 | INFO     | __main__:run_daily:53 - ============================================================
+2026-02-23 07:00:02.055 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-02-23 07:00:02.055 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-02-23 07:00:02.055 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-02-23 07:00:02.055 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-02-23 07:00:02.055 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-02-23 07:00:02.055 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-02-23 07:00:02.055 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-02-23 07:00:02.055 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-02-23 07:00:02.055 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-23 07:00:02.055 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-02-23 07:00:02.102 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-02-23 07:00:02.102 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-23 07:00:02.102 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-23 07:00:02.251 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 229923 chars
+2026-02-23 07:00:02.278 | INFO     | agents.rfb_news_agent:parse:103 - 📰 22 notícias únicas extraídas
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:112 - 📦 22 itens extraídos da fonte
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-02-23 07:00:02.278 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-02-23 07:00:02.278 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 22
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 22
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-23T07:00:02.102240
+  Fim: 2026-02-23T07:00:02.278974
+2026-02-23 07:00:02.279 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-23 07:00:02.279 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-02-23 07:00:02.279 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-02-23 07:00:02.279 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-23 07:00:02.279 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-23 07:00:02.370 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 180389 chars
+2026-02-23 07:00:02.396 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-02-23 07:00:02.396 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-02-23 07:00:02.396 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-02-23 07:00:02.396 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-02-23 07:00:02.396 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-02-23 07:00:02.396 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-02-23 07:00:02.396 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-02-23 07:00:02.396 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-23T07:00:02.279433
+  Fim: 2026-02-23T07:00:02.396954
+2026-02-23 07:00:02.396 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-23 07:00:02.397 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-02-23 07:00:02.398 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-02-23 07:00:02.398 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-23 07:00:02.398 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-23 07:00:02.575 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 183274 chars
+2026-02-23 07:00:02.622 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-02-23 07:00:02.622 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-02-23 07:00:02.622 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-23T07:00:02.398226
+  Fim: 2026-02-23T07:00:02.622666
+2026-02-23 07:00:02.622 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-23 07:00:02.622 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-02-23 07:00:02.623 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-02-23 07:00:02.623 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-02-23 07:00:02.623 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-02-23 07:00:03.106 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 189713 chars
+2026-02-23 07:00:03.131 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-02-23 07:00:03.133 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-02-23 07:00:03.133 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-23 07:00:03.133 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-23T07:00:02.623462
+  Fim: 2026-02-23T07:00:03.133729
+2026-02-23 07:00:03.133 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-23 07:00:03.133 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-02-23 07:00:03.135 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-02-23 07:00:03.135 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-23 07:00:03.135 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-23 07:00:03.226 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 203726 chars
+2026-02-23 07:00:03.264 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-02-23 07:00:03.265 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-02-23 07:00:03.265 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-23 07:00:03.265 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-23T07:00:03.135086
+  Fim: 2026-02-23T07:00:03.265209
+2026-02-23 07:00:03.266 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 23/02/2026 07:00
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    41
+  Novos inseridos:    0
+  Potenciais (dry-run): 41
+  Erros:              0
+  Duração:            1.2s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 22 extraídos, 0 inseridos, 22 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-02-23 07:00:03.266 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-02-23_0700.txt
+2026-02-24 07:06:35.048 | INFO     | __main__:run_daily:51 - ============================================================
+2026-02-24 07:06:35.049 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 24/02/2026 07:06
+2026-02-24 07:06:35.049 | INFO     | __main__:run_daily:53 - ============================================================
+2026-02-24 07:06:35.049 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-02-24 07:06:35.049 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-02-24 07:06:35.049 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-02-24 07:06:35.049 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-02-24 07:06:35.049 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-02-24 07:06:35.049 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-02-24 07:06:35.049 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-02-24 07:06:35.049 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-02-24 07:06:35.049 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-24 07:06:35.049 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-02-24 07:06:35.099 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-02-24 07:06:35.099 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-24 07:06:35.099 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-24 07:06:35.477 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 232820 chars
+2026-02-24 07:06:35.545 | INFO     | agents.rfb_news_agent:parse:103 - 📰 23 notícias únicas extraídas
+2026-02-24 07:06:35.545 | INFO     | agents.base_agent:run:112 - 📦 23 itens extraídos da fonte
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza atualização da minuta da prime
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-02-24 07:06:35.546 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-02-24 07:06:35.546 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 23
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 23
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-24T07:06:35.099299
+  Fim: 2026-02-24T07:06:35.546634
+2026-02-24 07:06:35.546 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-24 07:06:35.546 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-02-24 07:06:35.547 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-02-24 07:06:35.547 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-24 07:06:35.547 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-24 07:06:35.783 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 180383 chars
+2026-02-24 07:06:35.821 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-02-24 07:06:35.821 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-02-24 07:06:35.821 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-02-24 07:06:35.821 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-02-24 07:06:35.821 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-02-24 07:06:35.821 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-02-24 07:06:35.821 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-02-24 07:06:35.821 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-24T07:06:35.547166
+  Fim: 2026-02-24T07:06:35.821905
+2026-02-24 07:06:35.821 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-24 07:06:35.821 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-02-24 07:06:35.822 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-02-24 07:06:35.822 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-24 07:06:35.822 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-24 07:06:36.051 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 183274 chars
+2026-02-24 07:06:36.091 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-02-24 07:06:36.091 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-02-24 07:06:36.091 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-24T07:06:35.822616
+  Fim: 2026-02-24T07:06:36.091586
+2026-02-24 07:06:36.091 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-24 07:06:36.091 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-02-24 07:06:36.092 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-02-24 07:06:36.092 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-02-24 07:06:36.092 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-02-24 07:06:37.660 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 190841 chars
+2026-02-24 07:06:37.696 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-02-24 07:06:37.697 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-02-24 07:06:37.697 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-24 07:06:37.697 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-24T07:06:36.092267
+  Fim: 2026-02-24T07:06:37.697599
+2026-02-24 07:06:37.697 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-24 07:06:37.697 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-02-24 07:06:37.699 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-02-24 07:06:37.699 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-24 07:06:37.699 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-24 07:06:37.859 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 203732 chars
+2026-02-24 07:06:37.904 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-02-24 07:06:37.905 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-02-24 07:06:37.905 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-24 07:06:37.905 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-24T07:06:37.699336
+  Fim: 2026-02-24T07:06:37.905301
+2026-02-24 07:06:37.906 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 24/02/2026 07:06
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    42
+  Novos inseridos:    0
+  Potenciais (dry-run): 42
+  Erros:              0
+  Duração:            2.9s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 23 extraídos, 0 inseridos, 23 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-02-24 07:06:37.906 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-02-24_0706.txt
+2026-02-25 07:00:03.717 | INFO     | __main__:run_daily:51 - ============================================================
+2026-02-25 07:00:03.718 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 25/02/2026 07:00
+2026-02-25 07:00:03.718 | INFO     | __main__:run_daily:53 - ============================================================
+2026-02-25 07:00:03.718 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-02-25 07:00:03.719 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-02-25 07:00:03.719 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-02-25 07:00:03.719 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-02-25 07:00:03.719 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-02-25 07:00:03.719 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-02-25 07:00:03.719 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-02-25 07:00:03.719 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-02-25 07:00:03.719 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-25 07:00:03.719 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-02-25 07:00:03.872 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-02-25 07:00:03.872 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-25 07:00:03.872 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-25 07:00:04.035 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 230562 chars
+2026-02-25 07:00:04.078 | INFO     | agents.rfb_news_agent:parse:103 - 📰 23 notícias únicas extraídas
+2026-02-25 07:00:04.078 | INFO     | agents.base_agent:run:112 - 📦 23 itens extraídos da fonte
+2026-02-25 07:00:04.078 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza atualização da minuta da prime
+2026-02-25 07:00:04.078 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-02-25 07:00:04.078 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-02-25 07:00:04.078 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-02-25 07:00:04.078 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-02-25 07:00:04.078 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-02-25 07:00:04.079 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-02-25 07:00:04.079 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 23
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 23
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-25T07:00:03.872308
+  Fim: 2026-02-25T07:00:04.079458
+2026-02-25 07:00:04.079 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-25 07:00:04.079 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-02-25 07:00:04.080 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-02-25 07:00:04.080 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-25 07:00:04.080 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-25 07:00:04.262 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 178131 chars
+2026-02-25 07:00:04.298 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-02-25 07:00:04.298 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-02-25 07:00:04.298 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-02-25 07:00:04.298 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-02-25 07:00:04.298 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-02-25 07:00:04.298 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-02-25 07:00:04.298 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-02-25 07:00:04.298 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-25T07:00:04.080013
+  Fim: 2026-02-25T07:00:04.298677
+2026-02-25 07:00:04.298 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-25 07:00:04.298 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-02-25 07:00:04.299 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-02-25 07:00:04.299 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-25 07:00:04.299 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-25 07:00:04.391 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 181016 chars
+2026-02-25 07:00:04.429 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-02-25 07:00:04.429 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-02-25 07:00:04.430 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-02-25 07:00:04.430 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-25T07:00:04.299346
+  Fim: 2026-02-25T07:00:04.430031
+2026-02-25 07:00:04.430 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-25 07:00:04.430 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-02-25 07:00:04.430 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-02-25 07:00:04.430 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-02-25 07:00:04.430 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-02-25 07:00:05.107 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 191493 chars
+2026-02-25 07:00:05.130 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-02-25 07:00:05.131 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-02-25 07:00:05.131 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-25 07:00:05.131 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-25T07:00:04.430656
+  Fim: 2026-02-25T07:00:05.131815
+2026-02-25 07:00:05.131 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-25 07:00:05.131 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-02-25 07:00:05.133 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-02-25 07:00:05.133 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-25 07:00:05.133 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-25 07:00:05.302 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 201474 chars
+2026-02-25 07:00:05.339 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-02-25 07:00:05.340 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-02-25 07:00:05.340 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-25 07:00:05.340 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-25T07:00:05.133125
+  Fim: 2026-02-25T07:00:05.340956
+2026-02-25 07:00:05.341 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 25/02/2026 07:00
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    42
+  Novos inseridos:    0
+  Potenciais (dry-run): 42
+  Erros:              0
+  Duração:            1.6s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 23 extraídos, 0 inseridos, 23 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-02-25 07:00:05.342 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-02-25_0700.txt
+2026-02-26 07:00:05.667 | INFO     | __main__:run_daily:51 - ============================================================
+2026-02-26 07:00:05.667 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 26/02/2026 07:00
+2026-02-26 07:00:05.667 | INFO     | __main__:run_daily:53 - ============================================================
+2026-02-26 07:00:05.668 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-02-26 07:00:05.668 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-02-26 07:00:05.668 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-02-26 07:00:05.668 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-02-26 07:00:05.668 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-02-26 07:00:05.668 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-02-26 07:00:05.668 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-02-26 07:00:05.668 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-02-26 07:00:05.668 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-26 07:00:05.668 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-02-26 07:00:05.713 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-02-26 07:00:05.713 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-26 07:00:05.713 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-26 07:00:08.178 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 230568 chars
+2026-02-26 07:00:08.234 | INFO     | agents.rfb_news_agent:parse:103 - 📰 23 notícias únicas extraídas
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:112 - 📦 23 itens extraídos da fonte
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza atualização da minuta da prime
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-02-26 07:00:08.234 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-02-26 07:00:08.235 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-02-26 07:00:08.235 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-02-26 07:00:08.235 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-02-26 07:00:08.235 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-02-26 07:00:08.235 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-02-26 07:00:08.235 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-02-26 07:00:08.235 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 23
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 23
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-26T07:00:05.713250
+  Fim: 2026-02-26T07:00:08.235173
+2026-02-26 07:00:08.235 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-26 07:00:08.235 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-02-26 07:00:08.235 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-02-26 07:00:08.235 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-26 07:00:08.235 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-26 07:00:08.321 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 178131 chars
+2026-02-26 07:00:08.355 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-02-26 07:00:08.355 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-02-26 07:00:08.355 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-02-26 07:00:08.355 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-02-26 07:00:08.355 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-02-26 07:00:08.355 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-02-26 07:00:08.355 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-02-26 07:00:08.355 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-26T07:00:08.235798
+  Fim: 2026-02-26T07:00:08.355384
+2026-02-26 07:00:08.355 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-26 07:00:08.355 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-02-26 07:00:08.356 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-02-26 07:00:08.356 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-26 07:00:08.356 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-26 07:00:08.437 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 181010 chars
+2026-02-26 07:00:08.481 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-02-26 07:00:08.481 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-02-26 07:00:08.481 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-26T07:00:08.356694
+  Fim: 2026-02-26T07:00:08.481825
+2026-02-26 07:00:08.481 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-26 07:00:08.481 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-02-26 07:00:08.483 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-02-26 07:00:08.483 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-02-26 07:00:08.483 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-02-26 07:00:08.917 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 191226 chars
+2026-02-26 07:00:08.952 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-02-26 07:00:08.953 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-02-26 07:00:08.953 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-26 07:00:08.953 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-26T07:00:08.483203
+  Fim: 2026-02-26T07:00:08.953929
+2026-02-26 07:00:08.953 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-26 07:00:08.954 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-02-26 07:00:08.955 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-02-26 07:00:08.955 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-26 07:00:08.955 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-26 07:00:09.045 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 201468 chars
+2026-02-26 07:00:09.090 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-02-26 07:00:09.091 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-02-26 07:00:09.091 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-26 07:00:09.092 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-26T07:00:08.955505
+  Fim: 2026-02-26T07:00:09.092024
+2026-02-26 07:00:09.092 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 26/02/2026 07:00
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    42
+  Novos inseridos:    0
+  Potenciais (dry-run): 42
+  Erros:              0
+  Duração:            3.4s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 23 extraídos, 0 inseridos, 23 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-02-26 07:00:09.093 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-02-26_0700.txt
+2026-02-27 07:00:01.212 | INFO     | __main__:run_daily:51 - ============================================================
+2026-02-27 07:00:01.213 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 27/02/2026 07:00
+2026-02-27 07:00:01.213 | INFO     | __main__:run_daily:53 - ============================================================
+2026-02-27 07:00:01.214 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-02-27 07:00:01.214 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-02-27 07:00:01.214 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-02-27 07:00:01.214 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-02-27 07:00:01.214 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-02-27 07:00:01.214 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-02-27 07:00:01.214 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-02-27 07:00:01.214 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-02-27 07:00:01.214 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-27 07:00:01.214 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-02-27 07:00:01.257 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-02-27 07:00:01.257 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-27 07:00:01.257 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-27 07:00:01.449 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 230908 chars
+2026-02-27 07:00:01.485 | INFO     | agents.rfb_news_agent:parse:103 - 📰 23 notícias únicas extraídas
+2026-02-27 07:00:01.485 | INFO     | agents.base_agent:run:112 - 📦 23 itens extraídos da fonte
+2026-02-27 07:00:01.485 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza atualização da minuta da prime
+2026-02-27 07:00:01.485 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-02-27 07:00:01.485 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-02-27 07:00:01.485 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-02-27 07:00:01.485 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-02-27 07:00:01.485 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-02-27 07:00:01.485 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-02-27 07:00:01.485 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-02-27 07:00:01.485 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-02-27 07:00:01.486 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 23
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 23
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-27T07:00:01.257240
+  Fim: 2026-02-27T07:00:01.486329
+2026-02-27 07:00:01.486 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-27 07:00:01.486 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-02-27 07:00:01.486 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-27 07:00:01.486 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-27 07:00:01.581 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 178471 chars
+2026-02-27 07:00:01.612 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-02-27 07:00:01.612 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-02-27 07:00:01.612 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-02-27 07:00:01.612 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-02-27 07:00:01.612 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-02-27 07:00:01.612 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-02-27 07:00:01.612 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-02-27 07:00:01.613 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-27T07:00:01.486802
+  Fim: 2026-02-27T07:00:01.612991
+2026-02-27 07:00:01.613 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-27 07:00:01.613 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-02-27 07:00:01.614 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-02-27 07:00:01.614 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-27 07:00:01.614 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-27 07:00:01.700 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 181356 chars
+2026-02-27 07:00:01.740 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-02-27 07:00:01.741 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-27T07:00:01.614242
+  Fim: 2026-02-27T07:00:01.741396
+2026-02-27 07:00:01.741 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-27 07:00:01.741 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-02-27 07:00:01.741 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-02-27 07:00:01.741 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-02-27 07:00:02.294 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 190394 chars
+2026-02-27 07:00:02.329 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-02-27 07:00:02.330 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-02-27 07:00:02.330 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-27 07:00:02.330 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-27T07:00:01.741892
+  Fim: 2026-02-27T07:00:02.330429
+2026-02-27 07:00:02.330 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-27 07:00:02.330 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-02-27 07:00:02.331 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-02-27 07:00:02.331 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-27 07:00:02.331 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-27 07:00:02.493 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 201808 chars
+2026-02-27 07:00:02.538 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-02-27 07:00:02.539 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-02-27 07:00:02.539 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-27 07:00:02.539 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-27T07:00:02.331792
+  Fim: 2026-02-27T07:00:02.539408
+2026-02-27 07:00:02.540 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 27/02/2026 07:00
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    42
+  Novos inseridos:    0
+  Potenciais (dry-run): 42
+  Erros:              0
+  Duração:            1.3s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 23 extraídos, 0 inseridos, 23 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-02-27 07:00:02.540 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-02-27_0700.txt
+2026-02-28 07:00:01.290 | INFO     | __main__:run_daily:51 - ============================================================
+2026-02-28 07:00:01.292 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 28/02/2026 07:00
+2026-02-28 07:00:01.292 | INFO     | __main__:run_daily:53 - ============================================================
+2026-02-28 07:00:01.293 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-02-28 07:00:01.293 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-02-28 07:00:01.293 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-02-28 07:00:01.293 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-02-28 07:00:01.293 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-02-28 07:00:01.293 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-02-28 07:00:01.293 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-02-28 07:00:01.293 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-02-28 07:00:01.293 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-28 07:00:01.293 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-02-28 07:00:01.336 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-02-28 07:00:01.336 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-28 07:00:01.336 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-02-28 07:00:01.575 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 230908 chars
+2026-02-28 07:00:01.620 | INFO     | agents.rfb_news_agent:parse:103 - 📰 23 notícias únicas extraídas
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:112 - 📦 23 itens extraídos da fonte
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza atualização da minuta da prime
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-02-28 07:00:01.620 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-02-28 07:00:01.621 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 23
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 23
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-28T07:00:01.336809
+  Fim: 2026-02-28T07:00:01.621327
+2026-02-28 07:00:01.621 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-28 07:00:01.621 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-02-28 07:00:01.621 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-28 07:00:01.621 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-02-28 07:00:02.764 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 178471 chars
+2026-02-28 07:00:02.807 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-02-28 07:00:02.807 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-02-28 07:00:02.807 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-02-28 07:00:02.807 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-02-28 07:00:02.807 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-02-28 07:00:02.807 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-02-28 07:00:02.807 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-02-28 07:00:02.807 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-28T07:00:01.621872
+  Fim: 2026-02-28T07:00:02.807485
+2026-02-28 07:00:02.807 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-28 07:00:02.807 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-02-28 07:00:02.808 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-02-28 07:00:02.809 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-28 07:00:02.809 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-02-28 07:00:02.887 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 181350 chars
+2026-02-28 07:00:02.931 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-02-28 07:00:02.931 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-02-28 07:00:02.931 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-02-28 07:00:02.931 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-02-28 07:00:02.931 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-02-28 07:00:02.931 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-02-28 07:00:02.931 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-02-28 07:00:02.931 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-02-28 07:00:02.931 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-02-28 07:00:02.931 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-02-28 07:00:02.932 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-02-28 07:00:02.932 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-02-28 07:00:02.932 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-02-28 07:00:02.932 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-02-28 07:00:02.932 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-02-28 07:00:02.932 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-02-28 07:00:02.932 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-28T07:00:02.808984
+  Fim: 2026-02-28T07:00:02.932170
+2026-02-28 07:00:02.932 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-28 07:00:02.932 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-02-28 07:00:02.932 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-02-28 07:00:02.933 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-02-28 07:00:02.933 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-02-28 07:00:03.590 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 190781 chars
+2026-02-28 07:00:03.623 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-02-28 07:00:03.625 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-02-28 07:00:03.625 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-28 07:00:03.625 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-28T07:00:02.932992
+  Fim: 2026-02-28T07:00:03.625429
+2026-02-28 07:00:03.625 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-02-28 07:00:03.625 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-02-28 07:00:03.626 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-02-28 07:00:03.626 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-28 07:00:03.626 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-02-28 07:00:03.718 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 201814 chars
+2026-02-28 07:00:03.761 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-02-28 07:00:03.762 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-02-28 07:00:03.762 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-02-28 07:00:03.762 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-28T07:00:03.626367
+  Fim: 2026-02-28T07:00:03.762987
+2026-02-28 07:00:03.764 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 28/02/2026 07:00
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    42
+  Novos inseridos:    0
+  Potenciais (dry-run): 42
+  Erros:              0
+  Duração:            2.5s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 23 extraídos, 0 inseridos, 23 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-02-28 07:00:03.764 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-02-28_0700.txt
+2026-03-01 07:00:02.707 | INFO     | __main__:run_daily:51 - ============================================================
+2026-03-01 07:00:02.709 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 01/03/2026 07:00
+2026-03-01 07:00:02.709 | INFO     | __main__:run_daily:53 - ============================================================
+2026-03-01 07:00:02.709 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-03-01 07:00:02.709 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-03-01 07:00:02.709 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-03-01 07:00:02.709 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-03-01 07:00:02.709 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-03-01 07:00:02.709 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-03-01 07:00:02.709 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-03-01 07:00:02.709 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-03-01 07:00:02.709 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-01 07:00:02.710 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-03-01 07:00:02.753 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-03-01 07:00:02.753 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-03-01 07:00:02.753 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-03-01 07:00:02.917 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 230908 chars
+2026-03-01 07:00:02.948 | INFO     | agents.rfb_news_agent:parse:103 - 📰 23 notícias únicas extraídas
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:112 - 📦 23 itens extraídos da fonte
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza atualização da minuta da prime
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-03-01 07:00:02.948 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-03-01 07:00:02.948 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 23
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 23
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-01T07:00:02.753396
+  Fim: 2026-03-01T07:00:02.948614
+2026-03-01 07:00:02.948 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-01 07:00:02.948 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-03-01 07:00:02.949 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-03-01 07:00:02.949 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-03-01 07:00:02.949 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-03-01 07:00:03.035 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 178471 chars
+2026-03-01 07:00:03.062 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-03-01 07:00:03.062 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-03-01 07:00:03.062 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-03-01 07:00:03.062 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-03-01 07:00:03.062 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-03-01 07:00:03.062 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-03-01 07:00:03.062 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-03-01 07:00:03.062 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-01T07:00:02.949043
+  Fim: 2026-03-01T07:00:03.062460
+2026-03-01 07:00:03.062 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-01 07:00:03.062 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-03-01 07:00:03.063 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-03-01 07:00:03.063 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-03-01 07:00:03.063 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-03-01 07:00:03.151 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 181356 chars
+2026-03-01 07:00:03.189 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-03-01 07:00:03.189 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-03-01 07:00:03.189 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-03-01 07:00:03.189 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-03-01 07:00:03.189 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-03-01 07:00:03.189 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-03-01 07:00:03.189 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-03-01 07:00:03.189 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-03-01 07:00:03.190 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-03-01 07:00:03.190 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-03-01 07:00:03.190 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-03-01 07:00:03.190 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-03-01 07:00:03.190 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-03-01 07:00:03.190 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-03-01 07:00:03.190 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-03-01 07:00:03.190 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-03-01 07:00:03.190 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-01T07:00:03.063599
+  Fim: 2026-03-01T07:00:03.190183
+2026-03-01 07:00:03.190 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-01 07:00:03.190 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-03-01 07:00:03.191 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-03-01 07:00:03.191 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-03-01 07:00:03.191 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-03-01 07:00:03.804 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 190781 chars
+2026-03-01 07:00:03.837 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-03-01 07:00:03.839 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-03-01 07:00:03.839 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-03-01 07:00:03.839 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-01T07:00:03.191482
+  Fim: 2026-03-01T07:00:03.839182
+2026-03-01 07:00:03.839 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-01 07:00:03.839 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-03-01 07:00:03.839 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-03-01 07:00:03.839 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-03-01 07:00:03.839 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-03-01 07:00:03.926 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 201814 chars
+2026-03-01 07:00:03.970 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-03-01 07:00:03.971 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-03-01 07:00:03.971 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-03-01 07:00:03.971 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-01T07:00:03.839800
+  Fim: 2026-03-01T07:00:03.971973
+2026-03-01 07:00:03.973 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 01/03/2026 07:00
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    42
+  Novos inseridos:    0
+  Potenciais (dry-run): 42
+  Erros:              0
+  Duração:            1.3s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 23 extraídos, 0 inseridos, 23 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-03-01 07:00:03.973 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-03-01_0700.txt
+2026-03-02 09:05:32.933 | INFO     | __main__:run_daily:51 - ============================================================
+2026-03-02 09:05:32.935 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 02/03/2026 09:05
+2026-03-02 09:05:32.935 | INFO     | __main__:run_daily:53 - ============================================================
+2026-03-02 09:05:32.935 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-03-02 09:05:32.935 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-03-02 09:05:32.935 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-03-02 09:05:32.935 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-03-02 09:05:32.935 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-03-02 09:05:32.935 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-03-02 09:05:32.935 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-03-02 09:05:32.935 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-03-02 09:05:32.935 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-02 09:05:32.935 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-03-02 09:05:32.986 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-03-02 09:05:32.986 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-03-02 09:05:32.986 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-03-02 09:05:33.228 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 230902 chars
+2026-03-02 09:05:33.260 | INFO     | agents.rfb_news_agent:parse:103 - 📰 23 notícias únicas extraídas
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:112 - 📦 23 itens extraídos da fonte
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza atualização da minuta da prime
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-03-02 09:05:33.260 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-03-02 09:05:33.260 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 23
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 23
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-02T09:05:32.986429
+  Fim: 2026-03-02T09:05:33.260750
+2026-03-02 09:05:33.260 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-02 09:05:33.260 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-03-02 09:05:33.262 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-03-02 09:05:33.262 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-03-02 09:05:33.262 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-03-02 09:05:33.607 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 178471 chars
+2026-03-02 09:05:33.849 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-03-02 09:05:33.851 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-03-02 09:05:33.851 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-03-02 09:05:33.851 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-03-02 09:05:33.851 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-03-02 09:05:33.852 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-03-02 09:05:33.852 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-03-02 09:05:33.852 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-02T09:05:33.262796
+  Fim: 2026-03-02T09:05:33.852055
+2026-03-02 09:05:33.852 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-02 09:05:33.852 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-03-02 09:05:33.875 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-03-02 09:05:33.875 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-03-02 09:05:33.876 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-03-02 09:05:34.251 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 181350 chars
+2026-03-02 09:05:34.877 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-03-02 09:05:34.883 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-03-02 09:05:34.891 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-03-02 09:05:34.918 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-03-02 09:05:34.918 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-03-02 09:05:34.918 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-03-02 09:05:34.918 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-02T09:05:33.875456
+  Fim: 2026-03-02T09:05:34.918937
+2026-03-02 09:05:34.919 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-02 09:05:34.919 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-03-02 09:05:35.409 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-03-02 09:05:35.411 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-03-02 09:05:35.412 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-03-02 09:05:36.108 | ERROR    | utils.scraper:fetch_page:40 - 💥 Erro ao acessar https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0: [Errno 8] nodename nor servname provided, or not known
+2026-03-02 09:05:36.113 | WARNING  | agents.dou_monitor_agent:fetch:53 - ⚠️  Busca do DOU não retornou resultado, tentando página principal
+2026-03-02 09:05:36.113 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/leiturajornal?data=02-03-2026
+2026-03-02 09:05:36.151 | ERROR    | utils.scraper:fetch_page:40 - 💥 Erro ao acessar https://www.in.gov.br/leiturajornal?data=02-03-2026: [Errno 8] nodename nor servname provided, or not known
+2026-03-02 09:05:36.154 | WARNING  | agents.base_agent:run:105 - ⚠️  Nenhum conteúdo retornado de https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-03-02 09:05:36.154 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-02T09:05:35.409200
+  Fim: 2026-03-02T09:05:36.154614
+2026-03-02 09:05:36.164 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-02 09:05:36.166 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-03-02 09:05:36.178 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-03-02 09:05:36.178 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-03-02 09:05:36.179 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-03-02 09:05:36.491 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 201814 chars
+2026-03-02 09:05:36.577 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-03-02 09:05:36.611 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-03-02 09:05:36.611 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-03-02 09:05:36.611 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-02T09:05:36.178352
+  Fim: 2026-03-02T09:05:36.611791
+2026-03-02 09:05:36.682 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 02/03/2026 09:05
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    42
+  Novos inseridos:    0
+  Potenciais (dry-run): 42
+  Erros:              0
+  Duração:            3.7s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 23 extraídos, 0 inseridos, 23 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-03-02 09:05:36.683 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-03-02_0905.txt
+2026-03-03 07:00:01.392 | INFO     | __main__:run_daily:51 - ============================================================
+2026-03-03 07:00:01.393 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 03/03/2026 07:00
+2026-03-03 07:00:01.393 | INFO     | __main__:run_daily:53 - ============================================================
+2026-03-03 07:00:01.393 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-03-03 07:00:01.393 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-03-03 07:00:01.393 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-03-03 07:00:01.393 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-03-03 07:00:01.393 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-03-03 07:00:01.393 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-03-03 07:00:01.393 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-03-03 07:00:01.393 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-03-03 07:00:01.393 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-03 07:00:01.393 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-03-03 07:00:01.438 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-03-03 07:00:01.438 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-03-03 07:00:01.438 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-03-03 07:00:01.588 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 230902 chars
+2026-03-03 07:00:01.617 | INFO     | agents.rfb_news_agent:parse:103 - 📰 23 notícias únicas extraídas
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:112 - 📦 23 itens extraídos da fonte
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza atualização da minuta da prime
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-03-03 07:00:01.617 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 23
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 23
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-03T07:00:01.438438
+  Fim: 2026-03-03T07:00:01.617566
+2026-03-03 07:00:01.617 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-03 07:00:01.617 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-03-03 07:00:01.617 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-03-03 07:00:01.618 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-03-03 07:00:01.618 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-03-03 07:00:02.825 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 178471 chars
+2026-03-03 07:00:02.865 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-03-03 07:00:02.865 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-03-03 07:00:02.865 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-03-03 07:00:02.865 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-03-03 07:00:02.866 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-03-03 07:00:02.866 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-03-03 07:00:02.866 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-03-03 07:00:02.866 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-03T07:00:01.617976
+  Fim: 2026-03-03T07:00:02.866109
+2026-03-03 07:00:02.866 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-03 07:00:02.866 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-03-03 07:00:02.866 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-03-03 07:00:02.866 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-03-03 07:00:02.866 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-03-03 07:00:02.953 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 181350 chars
+2026-03-03 07:00:02.999 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-03-03 07:00:02.999 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-03-03 07:00:02.999 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-03T07:00:02.866813
+  Fim: 2026-03-03T07:00:02.999636
+2026-03-03 07:00:02.999 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-03 07:00:02.999 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-03-03 07:00:03.000 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-03-03 07:00:03.000 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-03-03 07:00:03.000 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-03-03 07:00:03.655 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 191174 chars
+2026-03-03 07:00:03.687 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-03-03 07:00:03.689 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-03-03 07:00:03.689 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-03-03 07:00:03.689 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-03T07:00:03.000389
+  Fim: 2026-03-03T07:00:03.689258
+2026-03-03 07:00:03.689 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-03 07:00:03.689 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-03-03 07:00:03.690 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-03-03 07:00:03.690 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-03-03 07:00:03.690 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-03-03 07:00:03.787 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 201814 chars
+2026-03-03 07:00:03.836 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-03-03 07:00:03.837 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-03-03 07:00:03.837 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-03-03 07:00:03.837 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-03T07:00:03.690731
+  Fim: 2026-03-03T07:00:03.837886
+2026-03-03 07:00:03.839 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 03/03/2026 07:00
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    42
+  Novos inseridos:    0
+  Potenciais (dry-run): 42
+  Erros:              0
+  Duração:            2.4s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 23 extraídos, 0 inseridos, 23 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-03-03 07:00:03.839 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-03-03_0700.txt
+2026-03-04 07:01:07.556 | INFO     | __main__:run_daily:51 - ============================================================
+2026-03-04 07:01:07.557 | INFO     | __main__:run_daily:52 - 🚀 ATLAS Daily Monitor — 04/03/2026 07:01
+2026-03-04 07:01:07.557 | INFO     | __main__:run_daily:53 - ============================================================
+2026-03-04 07:01:07.557 | WARNING  | config:get_supabase:37 - ⚠️  Supabase não configurado. Verifique o arquivo .env
+2026-03-04 07:01:07.557 | WARNING  | __main__:run_daily:60 - ⚠️  Supabase não configurado. Executando em DRY-RUN.
+2026-03-04 07:01:07.557 | INFO     | __main__:run_daily:71 - 📋 5 agentes diários para executar:
+
+2026-03-04 07:01:07.557 | INFO     | __main__:run_daily:73 -    • rfb_news — Coleta notícias oficiais da RFB sobre a Reforma Tributária
+2026-03-04 07:01:07.557 | INFO     | __main__:run_daily:73 -    • rfb_marcos — Monitora novos marcos regulatórios (LCs, Portarias, ECs)
+2026-03-04 07:01:07.557 | INFO     | __main__:run_daily:73 -    • rfb_orientacoes — Coleta atualizações nas orientações de obrigações para 2026
+2026-03-04 07:01:07.557 | INFO     | __main__:run_daily:73 -    • dou_monitor — Monitora publicações do DOU sobre CBS, IBS, IS e Reforma Tributária
+2026-03-04 07:01:07.557 | INFO     | __main__:run_daily:73 -    • rfb_entenda — Detecta alterações na página 'Entenda a Reforma' (cronograma, regras, alíquotas)
+2026-03-04 07:01:07.557 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-04 07:01:07.557 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_news
+2026-03-04 07:01:07.598 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_news
+2026-03-04 07:01:07.598 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-03-04 07:01:07.598 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+2026-03-04 07:01:08.101 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 230908 chars
+2026-03-04 07:01:08.153 | INFO     | agents.rfb_news_agent:parse:103 - 📰 23 notícias únicas extraídas
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:112 - 📦 23 itens extraídos da fonte
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza atualização da minuta da prime
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária: Receita Federal disponibiliza manuais e 
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal lança chatbot com IA Generativa sobre a Refo
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Perguntas e Respostas sobre as mudan
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal alerta: é falso que “todo proprietário que a
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Fazenda, Receita e Serpro lançam Reforma Tributária do Consu
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal publica Norma sobre a habilitação dos titula
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal edita Norma que dispõe sobre a redução de be
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal disponibiliza versão de testes da CBS para a
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal e Comitê Gestor do IBS definem regras relati
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal esclarece sobre opção da CBS na locação, ces
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal atualiza página sobre a Reforma Tributária d
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita libera API para consulta à apuração de CBS
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] O NFS-e celebra mais um marco de modernização e eficiência c
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal orienta contribuintes sobre a entrega do PGD
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Plataforma da Nota Fiscal de Serviços Eletrônica já recebeu 
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Comunicado Conjunto
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo - RTC - Obrigatoriedade ao DTE
+2026-03-04 07:01:08.153 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal, em parceria com o Serpro, realiza Lives sob
+2026-03-04 07:01:08.154 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Piloto para testar sistemas da Reforma Tributária do Consumo
+2026-03-04 07:01:08.154 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita lança projeto piloto para testar sistemas da Reforma
+2026-03-04 07:01:08.154 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Receita Federal promove encontro com representantes do CFC p
+2026-03-04 07:01:08.154 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Reforma Tributária do Consumo: Adaptação da Nota Fiscal de S
+2026-03-04 07:01:08.154 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 23
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 23
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-04T07:01:07.598647
+  Fim: 2026-03-04T07:01:08.154126
+2026-03-04 07:01:08.154 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-04 07:01:08.154 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_marcos
+2026-03-04 07:01:08.154 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_marcos
+2026-03-04 07:01:08.154 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-03-04 07:01:08.154 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+2026-03-04 07:01:08.286 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 178471 chars
+2026-03-04 07:01:08.332 | INFO     | agents.rfb_marcos_agent:parse:98 - 📜 5 marcos regulatórios extraídos
+2026-03-04 07:01:08.332 | INFO     | agents.base_agent:run:112 - 📦 5 itens extraídos da fonte
+2026-03-04 07:01:08.332 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 549, de 13 de junho de 2025
+2026-03-04 07:01:08.332 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 214, de 16 de janeiro de 2025
+2026-03-04 07:01:08.332 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Lei Complementar nº 227, de 13 de janeiro de 2026
+2026-03-04 07:01:08.332 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Portaria RFB nº 501, de 20 de dezembro de 2024
+2026-03-04 07:01:08.332 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] Emenda Constitucional nº 132, de 20 de dezembro de 2023
+2026-03-04 07:01:08.332 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-04T07:01:08.154790
+  Fim: 2026-03-04T07:01:08.332460
+2026-03-04 07:01:08.332 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-04 07:01:08.332 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_orientacoes
+2026-03-04 07:01:08.333 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_orientacoes
+2026-03-04 07:01:08.333 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-03-04 07:01:08.333 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+2026-03-04 07:01:08.571 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 181356 chars
+2026-03-04 07:01:08.621 | INFO     | agents.rfb_orientacoes_agent:parse:117 - 📋 14 obrigações extraídas
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:112 - 📦 14 itens extraídos da fonte
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Obrigações a Partir de 2026
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CNPJ — Obrigações a Partir de 2026
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Obrigações Acessórias
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFC-e — Obrigações Acessórias
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] CT-e — Obrigações Acessórias
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFS-e — Obrigações Acessórias
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFCom — Obrigações Acessórias
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF3e — Obrigações Acessórias
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Obrigações Acessórias
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-ABI — Novas Obrigações com Leiautes Definidos
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NFAg — Novas Obrigações com Leiautes Definidos
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] BP-e — Novas Obrigações com Leiautes Definidos
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] NF-e — Novas Obrigações com Leiautes em Construção
+2026-03-04 07:01:08.621 | INFO     | agents.base_agent:run:134 - 🔍 [DRY-RUN] DeRE — Novas Obrigações com Leiautes em Construção
+2026-03-04 07:01:08.621 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-04T07:01:08.333144
+  Fim: 2026-03-04T07:01:08.621969
+2026-03-04 07:01:08.622 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-04 07:01:08.622 | INFO     | __main__:run_daily:78 - ▶ Executando: dou_monitor
+2026-03-04 07:01:08.622 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: dou_monitor
+2026-03-04 07:01:08.622 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+2026-03-04 07:01:08.622 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.in.gov.br/consulta/-/buscar/dou?q=Reforma+Tributária+Consumo&s=todos&exactDate=mes&sortType=0
+2026-03-04 07:01:10.242 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 192310 chars
+2026-03-04 07:01:10.276 | INFO     | agents.dou_monitor_agent:parse:139 - 🔍 Tentando extração alternativa de links do DOU...
+2026-03-04 07:01:10.277 | INFO     | agents.dou_monitor_agent:parse:169 - 📰 0 publicações relevantes do DOU
+2026-03-04 07:01:10.277 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-03-04 07:01:10.277 | INFO     | __main__:run_daily:89 - ━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-04T07:01:08.622827
+  Fim: 2026-03-04T07:01:10.277960
+2026-03-04 07:01:10.278 | INFO     | __main__:run_daily:77 - 
+────────────────────────────────────────
+2026-03-04 07:01:10.278 | INFO     | __main__:run_daily:78 - ▶ Executando: rfb_entenda
+2026-03-04 07:01:10.279 | INFO     | agents.base_agent:run:98 - 🚀 Iniciando agente: rfb_entenda
+2026-03-04 07:01:10.279 | INFO     | agents.base_agent:run:99 -    Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-03-04 07:01:10.279 | DEBUG    | utils.scraper:fetch_page:23 - 🌐 GET https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+2026-03-04 07:01:10.394 | DEBUG    | utils.scraper:fetch_page:31 - ✅ 200 — 201814 chars
+2026-03-04 07:01:10.432 | INFO     | agents.rfb_entenda_agent:parse:126 - ✅ Nenhuma mudança detectada na página 'Entenda a Reforma'
+2026-03-04 07:01:10.433 | DEBUG    | agents.rfb_entenda_agent:_save_state:152 - 💾 Estado salvo em /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/entenda_state.json
+2026-03-04 07:01:10.434 | INFO     | agents.base_agent:run:112 - 📦 0 itens extraídos da fonte
+2026-03-04 07:01:10.434 | INFO     | __main__:run_daily:89 - ━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Potenciais inserções (dry-run): 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-03-04T07:01:10.279042
+  Fim: 2026-03-04T07:01:10.434096
+2026-03-04 07:01:10.434 | INFO     | __main__:run_daily:139 - 
+============================================================
+📊 RELATÓRIO DIÁRIO — 04/03/2026 07:01
+============================================================
+  Modo de execucao:    DRY-RUN
+  Agentes executados: 5
+  Itens extraídos:    42
+  Novos inseridos:    0
+  Potenciais (dry-run): 42
+  Erros:              0
+  Duração:            2.9s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 23 extraídos, 0 inseridos, 23 potenciais
+  ✅ rfb_marcos: 5 extraídos, 0 inseridos, 5 potenciais
+  ✅ rfb_orientacoes: 14 extraídos, 0 inseridos, 14 potenciais
+  ✅ dou_monitor: 0 extraídos, 0 inseridos, 0 potenciais
+  ✅ rfb_entenda: 0 extraídos, 0 inseridos, 0 potenciais
+============================================================
+2026-03-04 07:01:10.435 | INFO     | __main__:run_daily:149 - 
+📄 Relatório salvo em: /Users/brendaibiapina/Desktop/ATLAS DA REFORMA TRIBUTÁRIA/05-Agentes/logs/reports/daily_2026-03-04_0701.txt

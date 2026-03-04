@@ -1,0 +1,74 @@
+
+============================================================
+📊 RELATÓRIO DIÁRIO — 20/02/2026 09:44
+============================================================
+  Agentes executados: 5
+  Itens extraídos:    41
+  Novos inseridos:    41
+  Erros:              0
+  Duração:            2.1s
+────────────────────────────────────────────────────────────
+  ✅ rfb_news: 22 extraídos, 22 novos
+  ✅ rfb_marcos: 5 extraídos, 5 novos
+  ✅ rfb_orientacoes: 14 extraídos, 14 novos
+  ✅ dou_monitor: 0 extraídos, 0 novos
+  ✅ rfb_entenda: 0 extraídos, 0 novos
+============================================================
+
+--- DETALHES ---
+
+
+────────────────────────────────────────
+rfb_news:
+━━━ Relatório: rfb_news ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/noticias
+  Extraídos: 22
+  Novos inseridos: 22
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-20T09:44:21.946216
+  Fim: 2026-02-20T09:44:22.150852
+
+────────────────────────────────────────
+rfb_marcos:
+━━━ Relatório: rfb_marcos ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
+  Extraídos: 5
+  Novos inseridos: 5
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-20T09:44:22.151460
+  Fim: 2026-02-20T09:44:22.371756
+
+────────────────────────────────────────
+rfb_orientacoes:
+━━━ Relatório: rfb_orientacoes ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026
+  Extraídos: 14
+  Novos inseridos: 14
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-20T09:44:22.373904
+  Fim: 2026-02-20T09:44:22.523088
+
+────────────────────────────────────────
+dou_monitor:
+━━━ Relatório: dou_monitor ━━━
+  Fonte: https://www.in.gov.br/servicos/diario-oficial-da-uniao/pesquisa
+  Extraídos: 0
+  Novos inseridos: 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-20T09:44:22.524071
+  Fim: 2026-02-20T09:44:23.903788
+
+────────────────────────────────────────
+rfb_entenda:
+━━━ Relatório: rfb_entenda ━━━
+  Fonte: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/entenda
+  Extraídos: 0
+  Novos inseridos: 0
+  Já existentes (pulados): 0
+  Erros: 0
+  Início: 2026-02-20T09:44:23.905111
+  Fim: 2026-02-20T09:44:24.049777

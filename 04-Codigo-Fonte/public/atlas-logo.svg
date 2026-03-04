@@ -1,0 +1,10 @@
+<svg width="520" height="128" viewBox="0 0 520 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(6,2)">
+    <path d="M64 10L114 111L64 84L14 111L64 10Z" fill="#1F6C75"/>
+    <path d="M64 35L87 82L64 68L41 82L64 35Z" fill="#F7F4EB"/>
+    <path d="M64 66L79 89L64 82L49 89L64 66Z" fill="#B18943"/>
+  </g>
+  <text x="150" y="84" fill="#1F6C75" font-family="Playfair Display, Georgia, serif" font-size="74" font-weight="700" letter-spacing="2.2">
+    ATLAS
+  </text>
+</svg>
