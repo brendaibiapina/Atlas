@@ -34,6 +34,11 @@ python orchestrator.py rodar rfb_news
 python orchestrator.py rodar-todos
 python orchestrator.py status
 python orchestrator.py nova-tarefa
+
+# Execução para CI/CD
+python run_ci.py --mode daily
+python run_ci.py --mode entenda
+python run_ci.py --mode all
 ```
 
 ---

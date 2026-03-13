@@ -222,13 +222,19 @@ export async function getChatbotKnowledgeBase(forceRefresh = false): Promise<Cha
         return knowledgeCache!.items;
     }
 
-    const [faqEntries, memoryEntries, obligationEntries, radarEntries, dbEntries] = await Promise.all([
+    const [faqEntriesResult, memoryEntriesResult, obligationEntriesResult, radarEntriesResult, dbEntriesResult] = await Promise.allSettled([
         Promise.resolve(mapFAQKnowledge()),
         Promise.resolve(mapSimuladorMemoryKnowledge()),
         mapObligationKnowledge(),
         mapRadarKnowledge(),
         mapSupabaseChatbotKnowledge(),
     ]);
+
+    const faqEntries = faqEntriesResult.status === 'fulfilled' ? faqEntriesResult.value : [];
+    const memoryEntries = memoryEntriesResult.status === 'fulfilled' ? memoryEntriesResult.value : [];
+    const obligationEntries = obligationEntriesResult.status === 'fulfilled' ? obligationEntriesResult.value : [];
+    const radarEntries = radarEntriesResult.status === 'fulfilled' ? radarEntriesResult.value : [];
+    const dbEntries = dbEntriesResult.status === 'fulfilled' ? dbEntriesResult.value : [];
 
     const merged = deduplicateEntries([
         ...dbEntries,

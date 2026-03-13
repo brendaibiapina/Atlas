@@ -9,6 +9,19 @@ on:
     - cron: '0 11 * * 1-5'
     
   workflow_dispatch: # Permite execução manual pelo botão no painel Actions
+    inputs:
+      mode:
+        description: Modo de execução manual
+        required: false
+        default: daily
+        type: choice
+        options:
+          - daily
+          - entenda
+          - all
+
+permissions:
+  contents: write
 
 jobs:
   run-agents:
@@ -31,22 +44,28 @@ jobs:
         pip install -r requirements.txt
         
     - name: Run RFB Entenda Agent
-      if: github.event.schedule == '0 3 * * 6' || github.event_name == 'workflow_dispatch'
+      if: github.event_name == 'schedule' && github.event.schedule == '0 3 * * 6'
       working-directory: ./05-Agentes
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-      run: python run.py rfb_entenda
+      run: python run_ci.py --mode entenda
 
     - name: Run Daily Agents
-      if: github.event.schedule == '0 11 * * 1-5' || github.event_name == 'workflow_dispatch'
+      if: github.event_name == 'schedule' && github.event.schedule == '0 11 * * 1-5'
       working-directory: ./05-Agentes
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-      run: |
-        python run.py rfb_news
-        # O agente de obrigações deverá ser chamado aqui também
+      run: python run_ci.py --mode daily
+
+    - name: Run Manual Dispatch
+      if: github.event_name == 'workflow_dispatch'
+      working-directory: ./05-Agentes
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      run: python run_ci.py --mode ${{ github.event.inputs.mode || 'daily' }}
 
     - name: Commit and push state changes
       if: always()
@@ -54,6 +73,10 @@ jobs:
       run: |
         git config --global user.name "GitHub Action Bot"
         git config --global user.email "action@github.com"
-        git add logs/*.json
-        git commit -m "chore: save agents state [skip ci]" || echo "No state changes to commit"
-        git push || echo "Nothing to push"
+        git add $(find logs -type f -name '*.json') 2>/dev/null || true
+        if git diff --cached --quiet; then
+          echo "No state changes to commit"
+          exit 0
+        fi
+        git commit -m "chore: save agents state [skip ci]"
+        git push
