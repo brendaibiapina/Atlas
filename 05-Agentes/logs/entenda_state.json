@@ -1,5 +1,5 @@
 {
-  "hash": "064e5f6bfe6144811d2666ec4a99279a",
+  "hash": "7ec0b23b63a4f56ca659755d943a7f1d",
   "sections": {
     "O que muda?": [
       "Tributos que passarão a existir:",
@@ -59,7 +59,7 @@
       "Ficará isenta a arrecadação da taxa de prova da CBS e do IBS, em 2026, para os contribuintes que cumprirem com as obrigações acessórias, conforme a legislação."
     ],
     "2027 e 2028": [
-      "Cobrança da CBS, que será reduzida em 0,1 (um décimo) ponto percentual - CBS: 99,9%",
+      "Cobrança de CBS com a alíquota reduzida em 0.1 (um décimo) ponto percentual.Cobrança de IBS com alíquota de 0.1 (um décimo) ponto percentual.",
       "Extinção do PIS e da COFINS;",
       "Redução a zero das alíquotas do IPI sobre todos os produtos, exceto aqueles que também sejam industrializados na Zona Franca de Manaus (ZFM);",
       "Instituição do Imposto Seletivo (IS): Criado para desestimular o consumo de bens e serviços prejudiciais à saúde ou ao meio ambiente. Incide sobre: produção, extração, comercialização ou importação de itens definidos por lei."
@@ -76,5 +76,5 @@
       "Extinção do ICMS e do ISS."
     ]
   },
-  "last_check": "2026-07-02T12:54:11.788838"
+  "last_check": "2026-07-04T06:10:10.431240"
 }
